@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jul 07 10:37:14 2017
+
+@author: Kiki Hung
+"""
+<html>
+<head>
+    <title>Please Enter Your Username and Password</title>
+</head>
+<body>
+    {% if message %}
+    <p style="color:red">{{message}}</p>
+    {% endif %}
+    <<form action="/signin" method="post">
+               <h1>BenQQQQQQ</h1>
+               
+                <p><input name = "username" placeholder = "Username" value = "{{ username }}"></p>
+                
+                <p><input name = "password" placeholder = "Password" type = "password"></p>
+               <p><button type = "submit"><b>Sign In</b></button></p>
+                </form>
+</body>
+</html>
